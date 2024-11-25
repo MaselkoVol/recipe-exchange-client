@@ -40,7 +40,6 @@ const CreateRecipe = (props: Props) => {
   const [selectedAddFiles, setSelectedAddFiles] = useState<File[] | null>(null);
   const [createRecipe, { error: createRecipeError, isLoading }] = useCreateRecipeMutation();
   const dispatch = useDispatch();
-  console.log(tagCategories);
   const navigate = useNavigate();
   const {
     register,
